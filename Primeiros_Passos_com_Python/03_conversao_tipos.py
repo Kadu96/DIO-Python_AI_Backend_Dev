@@ -12,3 +12,5 @@ idade = '28'
 
 print(float(preco) * 2)
 print(int(idade))
+
+print(round(float("10.2659"),2))
