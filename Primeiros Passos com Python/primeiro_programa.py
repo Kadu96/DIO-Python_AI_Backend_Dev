@@ -1,1 +1,0 @@
-print("Oi, Seja Bem-Vindo ao curso de Python!!")
