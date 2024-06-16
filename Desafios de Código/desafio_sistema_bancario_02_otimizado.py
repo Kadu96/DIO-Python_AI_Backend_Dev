@@ -20,7 +20,7 @@ def sacar(*,valor, saldo, extrato, limite, numero_saques):
         else:
             mensagem = "Saque não liberado.\n"
             if saldo < valor:
-                mensagem += "Sem saldo disponível"
+                mensagem += "Sem saldo disponível\n"
             if limite < valor:
                 mensagem += "Valor acima do Limite disponível."
     return valor, saldo, extrato, limite, numero_saques, mensagem
