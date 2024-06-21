@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class ControleRemoto(ABC):
+class ControleRemoto(ABC):  #interface
     @abstractmethod
     def ligar(self):
         pass
