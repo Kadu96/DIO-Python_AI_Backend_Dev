@@ -183,7 +183,7 @@ class Historico:
             }
         )
         
-    def gerar_relatorio(self, tipo_transacao):
+    def gerar_relatorio(self, tipo_transacao=None):
         for transacao in self._transacoes:
             if tipo_transacao:
                 if transacao['tipo'] == tipo_transacao:
