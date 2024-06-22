@@ -179,22 +179,21 @@ class Historico:
             {
                 "tipo": transacao.__class__.__name__,
                 "valor": transacao.valor,
-                "data": datetime.now().strftime("%d-%m-%y %H:%M:%s"),
+                "data": datetime.now().strftime("%d-%m-%Y %H:%M:%S")
             }
         )
         
     def gerar_relatorio(self, tipo_transacao):
         for transacao in self._transacoes:
-            if tipo_transacao == "Deposito":
-                yield transacao if transacao['tipo'] == tipo_transacao else ""
-            elif tipo_transacao == "Saque":
-                yield transacao if transacao['tipo'] == tipo_transacao else ""
+            if tipo_transacao:
+                if transacao['tipo'] == tipo_transacao:
+                    yield transacao
             else:
                 yield transacao
                 
 def log_transacao(func):
     def envelope(*args, **kwargs):
-        reg_transacao = datetime.now().strftime("%d/%m/%y %H:%M:%s")
+        reg_transacao = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
         resultado = func(*args, **kwargs)
         print(reg_transacao)
         return resultado
@@ -278,8 +277,7 @@ def ver_extrato(clientes):
         [1]\tDepositos
         [2]\tSaques
         
-        ==> 
-    """
+        ==> """
     opcao = int(input(menu_operacoes))
     if opcao == 0:
         tipo_transacao = None
