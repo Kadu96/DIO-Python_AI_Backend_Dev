@@ -1,0 +1,10 @@
+24/06/2024 15:04:08,CADASTRAR_CLIENTE,(){'clientes': [<PessoaFisica: (10)>]},None
+24/06/2024 15:04:23,CADASTRAR_CONTA,(){'nro_conta': 1, 'clientes': [<PessoaFisica: (10)>], 'contas': [<ContaCorrente: ('0001', '2','carlos')>]},None
+24/06/2024 15:04:26,DEPOSITAR,(){'clientes': [<PessoaFisica: (10)>]},None
+24/06/2024 15:10:59,CADASTRAR_CLIENTE,(){'clientes': [<PessoaFisica: (11)>]},None
+24/06/2024 15:11:09,CADASTRAR_CONTA,(){'nro_conta': 1, 'clientes': [<PessoaFisica: (11)>], 'contas': [<ContaCorrente: ('0001', '2','eduardo')>]},None
+24/06/2024 15:11:15,DEPOSITAR,(){'clientes': [<PessoaFisica: (11)>]},None
+24/06/2024 15:11:19,SACAR,(){'clientes': [<PessoaFisica: (11)>]},None
+24/06/2024 15:11:24,VER_EXTRATO,(){'clientes': [<PessoaFisica: (11)>]},None
+24/06/2024 15:12:57,CADASTRAR_CONTA, Argumentos: (){'nro_conta': 1, 'clientes': [], 'contas': []},None
+24/06/2024 15:13:03,CADASTRAR_CONTA, Argumentos: (){'nro_conta': 1, 'clientes': [], 'contas': []},None

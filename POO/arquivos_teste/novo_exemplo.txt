@@ -1,0 +1,1 @@
+Ação de manipulação de arquivos em Python
