@@ -7,7 +7,7 @@ print(f"{d}\n")
 e = date.today()
 print(f"{e}\n")
 
-f = datetime.now()   #(2024, 6, 24, 9, 16)
+f = datetime.now()  # (2024, 6, 24, 9, 16)
 print(f"{f}")
 
 g = f + timedelta(weeks=1)

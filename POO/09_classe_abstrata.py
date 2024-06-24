@@ -1,44 +1,48 @@
 from abc import ABC, abstractmethod
 
-class ControleRemoto(ABC):  #interface
+
+class ControleRemoto(ABC):  # interface
     @abstractmethod
     def ligar(self):
         pass
-    
+
     @abstractmethod
     def desligar(self):
         pass
-    
+
     @property
-    @abstractmethod #@abstractproperty :: Deprecated, use 'property' with 'abstractmethod' instead
+    @abstractmethod  # @abstractproperty :: Deprecated, use 'property' with 'abstractmethod' instead
     def marca(self):
         pass
-    
+
+
 class ControleTv(ControleRemoto):
     def ligar(self):
         print("Ligando a TV...")
         print("Ligada")
-        
+
     def desligar(self):
         print("Desligando a TV...")
         print("Desligada")
-        
+
     @property
     def marca(self):
         return "LG"
-        
+
+
 class ControleArCondicionado(ControleRemoto):
     def ligar(self):
         print("Ligando o Ar Condicionado...")
         print("Ligado")
-        
+
     def desligar(self):
         print("Desligando o Ar Condicionado...")
-        print("Desligado")        
-        
+        print("Desligado")
+
     @property
     def marca(self):
         return "Philco"
+
 
 controle = ControleTv()
 controle.ligar()
