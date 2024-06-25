@@ -16,7 +16,7 @@ print(curso.center(10, "#"))
 print(".".join(curso))
 print()
 
-#fatiamento de string
+# fatiamento de string
 nome = "Carlos Eduardo da Silva"
 
 print(nome[0])
@@ -28,7 +28,7 @@ print(nome[:])
 print(nome[::-1])
 print()
 
-#string múltiplas linhas
+# string múltiplas linhas
 mensagem = f"""
     Olá meu nome é {nome}
 Eu estou aprendendo Python.
