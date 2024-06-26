@@ -1,0 +1,6 @@
+{
+    "_id": "ObjectId(123)",
+    "data": "2024-10-10",
+    "status": "pendente",
+    "destino": "ObjectId(1)"
+}

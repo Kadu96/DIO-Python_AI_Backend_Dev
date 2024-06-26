@@ -1,0 +1,22 @@
+{
+    "_id": 1,
+    "nome": "Carlos Eduardo",
+    "email": "cadusilva96@gmail.com",
+    "idade": 28,
+    "data_nascimento": "1996-01-24",
+    "enderecos": [
+        {
+            "logradouro": "Rua Cabo Manoel Bire Aguella",
+            "numero": 1843,
+            "bairro": "Santa Felicidade",
+            "cidade": "Cascavel"
+        }
+    ],
+    "interesses": [
+        "kart",
+        "culinaria"
+    ],
+    "reservas": [
+        "ObjectId(123)"
+    ]
+}

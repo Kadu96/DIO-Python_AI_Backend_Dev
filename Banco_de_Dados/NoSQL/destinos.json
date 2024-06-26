@@ -1,0 +1,12 @@
+{
+    "_id": 1,
+    "nome": "Parque Ibirapuera",
+    "descricao": "Principal parque de São Paulo",
+    "localizacao": {
+        "type": "Point",
+        "coordinates": [
+            -46.661056,
+            -23.587384
+        ]
+    }
+}
