@@ -1,0 +1,3 @@
+from Projeto_API.categorias.models import CategoriaModel
+from Projeto_API.centro_treinamento.models import CentroTreinamentoModel
+from Projeto_API.atleta.models import AtletaModel

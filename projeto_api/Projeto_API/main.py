@@ -1,6 +1,8 @@
 from fastapi import FastAPI
+from Projeto_API.routers import api_router
 
 app = FastAPI(title="Projeto API")
+app.include_router(api_router)
 
 # if __name__ == "main":
 #     import uvicorn
