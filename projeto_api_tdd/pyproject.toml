@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "projeto-api-tdd"
+version = "0.0.1"
+description = "Projeto de API com TDD"
+authors = ["Carlos <cadusilva96@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.111.0"
+pydantic = "^2.8.0"
+pytest = "^8.2.2"
+motor = "^3.5.0"
+unicorn = "^2.0.1.post1"
+pydantic-settings = "^2.3.4"
+pytest-asyncio = "^0.23.7"
+pre-commit = "^3.7.1"
+httpx = "^0.27.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
