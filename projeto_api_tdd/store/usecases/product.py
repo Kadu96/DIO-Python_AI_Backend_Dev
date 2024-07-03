@@ -1,4 +1,4 @@
-from typing import List
+from typing import Any, Dict, List
 from uuid import UUID
 from motor.motor_asyncio import AsyncIOMotorClient, AsyncIOMotorDatabase
 import pymongo
@@ -28,8 +28,17 @@ class ProductUsecase:
 
         return ProductOut(**result)
 
-    async def query(self) -> List[ProductOut]:
-        return [ProductOut(**item) async for item in self.collection.find()]
+    async def query(self, filters: Dict[str, Any]) -> List[ProductOut]:
+        query = {}
+        if "price__gt" in filters:
+            query["price"] = {"$gt": filters["price__gt"]}
+        if "price__lt" in filters:
+            if "price" in query:
+                query["price"]["$lt"] = filters["price__lt"]
+            else:
+                query["price"] = {"$lt": filters["price__lt"]}
+
+        return [ProductOut(**item) async for item in self.collection.find(query)]
 
     async def update(self, id: UUID, body: ProductUpdate) -> ProductUpdateOut:
         result = await self.collection.find_one_and_update(
